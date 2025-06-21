@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background: url('https://images.unsplash.com/photo-1743841727503-dc5582e348f3?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    background: black;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  .section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+  }
+  
+  #about img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+  
+  .left-text {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 0 0; /* push to left */
+  }
+
+  .skills {
+    background: #f2f2f2;
+  }
+  
+  .skill-bar {
+    background: #ddd;
+    border-radius: 25px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .skill-bar div {
+    height: 30px;
+    background: #444;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  form input,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #6c5f5f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #a39797;
+    padding: 30px;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-icons i {
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  .back-to-top {
+    background: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #about {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
